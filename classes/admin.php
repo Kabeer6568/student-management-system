@@ -14,7 +14,7 @@ class Admin extends Database{
         if ($row) {
             
             $storedHash = $row['userpass'];
-            if (password_verify($pass , $storedHash)) {
+            if ($pass === $storedHash) {
                 $_SESSION['userid'] = $row['id'];
                 $_SESSION['username'] = $row['username'];
                 

@@ -72,6 +72,7 @@ class Database{
         username VARCHAR(255) NOT NULL,
         useremail VARCHAR(255) NOT NULL,
         userpass VARCHAR(255) NOT NULL,
+        role ENUM('admin') default 'admin',
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )";
 

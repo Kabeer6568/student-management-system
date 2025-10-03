@@ -3,9 +3,12 @@
 session_start();
 
 require_once "../classes/student.php";
+include_once('../inc/header.php');
 
 $student = new Student;
 $student->pageVisible();
+
+
 ?>
 
     <!-- Main Content -->
@@ -102,4 +105,8 @@ $student->pageVisible();
         </div>
     </main>
 
+    <?php
     
+    include_once('../inc/footer.php');
+
+    ?>
